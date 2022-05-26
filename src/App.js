@@ -33,6 +33,7 @@ function App({signOut}) {
     setNotes(newNotesArray);
     await API.graphql({ query: deleteNoteMutation, variables: { input: { id } }});
   }
+  console.log("hello world")
 
   return (
     <div className="App">
